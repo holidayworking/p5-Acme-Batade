@@ -1,22 +1,37 @@
 package Acme::Batade;
+use utf8;
 use strict;
 use warnings;
 our $VERSION = '0.01';
+
+sub new {
+    my $class = shift;
+    my $self = bless {}, $class;
+    return $self;
+}
+
+sub eat {
+    my ($slef, $food) =@_;
+    return $food . 'うめええええ！！！！！';
+}
 
 1;
 __END__
 
 =head1 NAME
 
-Acme::Batade -
+Acme::Batade - Butter Danish
 
 =head1 SYNOPSIS
 
   use Acme::Batade;
 
+  my $batade = Acme::Batade->new();
+  say $batade->eat('バターデニッシュ') # バターデニッシュうめええええ！！！！！
+
 =head1 DESCRIPTION
 
-Acme::Batade is
+Acme::Batade is Butter Danish.
 
 =head1 AUTHOR
 

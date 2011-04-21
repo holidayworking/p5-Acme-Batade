@@ -1,14 +1,17 @@
 =head1 NAME
 
-Acme::Batade -
+Acme::Batade - Butter Danish
 
 =head1 SYNOPSIS
 
   use Acme::Batade;
 
+  my $batade = Acme::Batade->new();
+  say $batade->eat('バターデニッシュ') # バターデニッシュうめええええ！！！！！
+
 =head1 DESCRIPTION
 
-Acme::Batade is
+Acme::Batade is Butter Danish.
 
 =head1 AUTHOR
 
